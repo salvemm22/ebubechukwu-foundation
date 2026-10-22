@@ -1,10 +1,9 @@
 // mobile menu
-
 const b=document.querySelector('.burger'),m=document.querySelector('.menu');
 if(b&&m){b.addEventListener('click',()=>{b.classList.toggle('open');m.classList.toggle('open')});
  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{b.classList.remove('open');m.classList.remove('open')}));}
- m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{b.classList.remove('open');m.classList.remove('open')}))}
 // reveal on scroll
+
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 // donation amount pickers
