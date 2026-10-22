@@ -164,7 +164,7 @@ a{color:inherit;text-decoration:none}
 .f-bottom{border-top:1px solid rgba(255,255,255,.12);padding:18px 0 22px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;opacity:.85}
 .f-bottom span{padding:0}
 .fdonate{position:fixed;right:16px;bottom:16px;z-index:70;box-shadow:0 14px 30px rgba(245,165,36,.5)}
-.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.in{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.js .reveal.in{opacity:1;transform:none}
 
 @media(max-width:980px){
  .hero .wrap,.story,.give,.split,.donate{grid-template-columns:minmax(0,1fr)}

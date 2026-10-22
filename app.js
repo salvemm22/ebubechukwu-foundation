@@ -1,3 +1,5 @@
+// enable reveal animation only when JS runs
+document.documentElement.classList.add('js');
 // mobile menu
 const b=document.querySelector('.burger'),m=document.querySelector('.menu');
 if(b&&m){b.addEventListener('click',()=>{b.classList.toggle('open');m.classList.toggle('open')});
